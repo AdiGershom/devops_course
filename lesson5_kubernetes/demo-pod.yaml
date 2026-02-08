@@ -3,11 +3,10 @@ kind: Pod
 metadata:
   name: demo-pod
   namespace: dev
-  labels:
-    app: demo
 spec:
   containers:
     - name: app
       image: nginx
+      imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 80
