@@ -1,0 +1,12 @@
+image:
+  repository: busybox
+  tag: "1.36.1"
+  command:
+    - "echo"
+    - "Hello from Helm"
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80

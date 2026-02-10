@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: myapp-cronjob
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: myapp
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              command: {{ toJson .Values.image.command }}
+          restartPolicy: Never

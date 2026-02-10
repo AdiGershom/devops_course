@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-app
+description: Helm chart for my application environment
+type: application
+
+version: 0.1.0
+appVersion: "1.0.0"
