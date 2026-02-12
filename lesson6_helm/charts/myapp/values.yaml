@@ -1,9 +1,9 @@
 image:
   repository: busybox
-  tag: "1.36.1"
-  command:
-    - "echo"
-    - "Hello from Helm"
+  tag: 0.3.0   # example for http-echo
+  command: #ongoing command for the container stay alive
+    - sleep
+    - "3600"
 
 replicaCount: 1
 

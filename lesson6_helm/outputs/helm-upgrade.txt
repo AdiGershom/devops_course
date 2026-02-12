@@ -1,0 +1,8 @@
+Release "myapp" has been upgraded. Happy Helming!
+NAME: myapp
+LAST DEPLOYED: Thu Feb 12 20:40:37 2026
+NAMESPACE: default
+STATUS: deployed
+REVISION: 26
+DESCRIPTION: Upgrade complete
+TEST SUITE: None

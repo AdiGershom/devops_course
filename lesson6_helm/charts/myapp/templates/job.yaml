@@ -4,6 +4,9 @@ metadata:
   name: myapp-job
 spec:
   template:
+    metadata:
+      labels:
+        app: myapp
     spec:
       containers:
         - name: myapp
