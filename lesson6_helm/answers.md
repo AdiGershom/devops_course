@@ -1,6 +1,7 @@
 ## Part 1 – Create Helm Chart
 
 Deployment- Runs the application continusly and ensures the desired number on pods are always running. supports updates and rollbacks
+(make sure the replicas number will be constant )
 
 Service- Provides a stable network endpoint to access pod.
 allow communication even when pods are recreated
@@ -8,7 +9,9 @@ allow communication even when pods are recreated
 DaemonSet- Ensure one pod runs on every node in the cluster
 commonly used for monitoring or logging agent
 
-CronJob- Runs jobs on a scheduled basis (like cron)
+job-running only one time and finish, if not succeed , will retry as BackoffLimit
+
+CronJob- Runs jobs on a scheduled basis (like cron in linux)
 used for recurring tasks.
 
 ConfigMap- Stores non-sensative configuration data

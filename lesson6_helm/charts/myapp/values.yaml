@@ -1,12 +1,8 @@
 image:
   repository: busybox
-  tag: 0.3.0   # example for http-echo
-  command: #ongoing command for the container stay alive
-    - sleep
-    - "3600"
-
-replicaCount: 1
+  tag: "latest"
+  command: ["sh", "-c", "echo Hello from Helm && sleep 3600"]
 
 service:
   type: ClusterIP
-  port: 80
+  port: 5678 
