@@ -62,7 +62,7 @@ because the pods are temporery, they won't managed or recreate authomaticly
 ## Part 4 – Deployment → ReplicaSet → Pod Relationship
 
 How many ReplicaSets exist after the update?
-5
+2 (the old one and the new)
 Why does Kubernetes create a new ReplicaSet?
 Because I updated the image to latest
 it create new replicaset only if there is any change/update
